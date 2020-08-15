@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta name="description" content="A frontend dashboard for the
@@ -7,34 +8,61 @@
     <meta name="author" content="Rashmika Opatha" />
     <meta name="viewport" content="width=device-width, initial-scale=
     1.0">
-    <link rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
     <title>TrackMe</title>
 </head>
+
 <body>
 
-<div class="container">
-    
-    <div id="navbar"></div><br>
+    <div class="container">
 
-    <h1>Devices</h1>
+        <div id="navbar"></div><br>
 
-    <table id="devices" class="table">
-        <thead>
-            <tr>
-                <th>User</th>
-                <th>Device</th>
-            </tr>
-        </thead>
+        <h1>Devices</h1>
+
+        <table id="devices" class="table">
+            <thead>
+                <tr>
+                    <th>User</th>
+                    <th>Device</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+            </tbody>
+        </table>
+
         
-        <tbody>
-    
-        </tbody>    
-    </table>
+        <div class="modal fade" id="historyModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Device History</h5>
+                    </div>
+                    <div class="modal-body">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Time</th>
+                                            <th>Temperature</th>
+                                            <th>Latitude</th>
+                                            <th>Longitude</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="historyContent">
+                                        
+                                    </tbody>
+                                </table>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <div id="footer"></div>
 
-</div>
+        <div class="" id="footer"></div>
+
+    </div>
 
 
 
